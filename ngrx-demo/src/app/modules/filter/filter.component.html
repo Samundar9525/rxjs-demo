@@ -1,0 +1,64 @@
+<div class="my-3">
+  <div class="row px-5 px-3">
+    <div class="col-md-4">
+      <strong>Ex -01 </strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Filter by :</strong> length >6
+      </p>
+      <hr />
+      <table class="table">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let i of data">
+          <td>{{i.id}}</td>
+          <td>{{i.name}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Ex -02 </strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Filter by :</strong> Gender ="Female"
+      </p>
+      <hr />
+      <table class="table">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Gender</th>
+        </tr>
+        <tr *ngFor="let i of data2">
+          <td>{{i.id}}</td>
+          <td>{{i.name}}</td>
+          <td>{{i.gender}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Ex -03 </strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Filter by :</strong> top 5 data only
+      </p>
+      <hr />
+      <table class="table">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Gender</th>
+        </tr>
+        <tr *ngFor="let i of data3">
+          <td>{{i.id}}</td>
+          <td>{{i.name}}</td>
+          <td>{{i.gender}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

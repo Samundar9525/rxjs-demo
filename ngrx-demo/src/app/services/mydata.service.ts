@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MydataService {
   url="https://jsonplaceholder.typicode.com/comments";
-
-
+  exclusive=new Subject<boolean>();
+  username=new Subject<string>();
   constructor(private http:HttpClient) { }
 
 

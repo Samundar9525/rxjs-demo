@@ -16,6 +16,12 @@ import { ToarrayComponent } from './modules/toarray/toarray.component';
 import { CommonModule } from '@angular/common';
 import { MapComponent } from './modules/map/map.component';
 import { PluckComponent } from './modules/pluck/pluck.component';
+import { FilterComponent } from './modules/filter/filter.component';
+import { TapComponent } from './modules/tap/tap.component';
+import { SubjectComponent } from './modules/subject/subject.component';
+import { Comp1Component } from './comp/comp1/comp1.component';
+import { Comp2Component } from './comp/comp2/comp2.component';
+import { Comp3Component } from './comp/comp3/comp3.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +37,12 @@ import { PluckComponent } from './modules/pluck/pluck.component';
     ToarrayComponent,
     MapComponent,
     PluckComponent,
+    FilterComponent,
+    TapComponent,
+    SubjectComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
 
   ],
   imports: [

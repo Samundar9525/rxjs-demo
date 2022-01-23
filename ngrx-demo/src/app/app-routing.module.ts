@@ -3,10 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { CustomObserableComponent } from './modules/custom-obserable/custom-obserable.component';
+import { FilterComponent } from './modules/filter/filter.component';
 import { IntervalComponent } from './modules/interval/interval.component';
 import { MapComponent } from './modules/map/map.component';
 import { OfFromComponent } from './modules/of-from/of-from.component';
 import { PluckComponent } from './modules/pluck/pluck.component';
+import { SubjectComponent } from './modules/subject/subject.component';
+import { TapComponent } from './modules/tap/tap.component';
 import { ToarrayComponent } from './modules/toarray/toarray.component';
 import { NgrxFormtoComponent } from './ngrx-formto/ngrx-formto.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
@@ -22,6 +25,9 @@ const routes: Routes = [
   {path: "customovserable",component:CustomObserableComponent},
   {path: "maps",component:MapComponent},
   {path: "pluck",component:PluckComponent},
+  {path: "filter",component:FilterComponent},
+  {path: "tap",component:TapComponent},
+  {path: "subject",component:SubjectComponent},
 
   {path: "**",redirectTo: "homepage"}
 ];
