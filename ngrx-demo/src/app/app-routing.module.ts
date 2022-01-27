@@ -8,7 +8,9 @@ import { IntervalComponent } from './modules/interval/interval.component';
 import { MapComponent } from './modules/map/map.component';
 import { OfFromComponent } from './modules/of-from/of-from.component';
 import { PluckComponent } from './modules/pluck/pluck.component';
+import { RetryComponent } from './modules/retry/retry.component';
 import { SubjectComponent } from './modules/subject/subject.component';
+import { TakeComponent } from './modules/take/take.component';
 import { TapComponent } from './modules/tap/tap.component';
 import { ToarrayComponent } from './modules/toarray/toarray.component';
 import { NgrxFormtoComponent } from './ngrx-formto/ngrx-formto.component';
@@ -28,6 +30,8 @@ const routes: Routes = [
   {path: "filter",component:FilterComponent},
   {path: "tap",component:TapComponent},
   {path: "subject",component:SubjectComponent},
+  {path: "take",component:TakeComponent},
+  {path: "retry",component:RetryComponent},
 
   {path: "**",redirectTo: "homepage"}
 ];

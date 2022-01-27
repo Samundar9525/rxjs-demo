@@ -22,6 +22,8 @@ import { SubjectComponent } from './modules/subject/subject.component';
 import { Comp1Component } from './comp/comp1/comp1.component';
 import { Comp2Component } from './comp/comp2/comp2.component';
 import { Comp3Component } from './comp/comp3/comp3.component';
+import { TakeComponent } from './modules/take/take.component';
+import { RetryComponent } from './modules/retry/retry.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { Comp3Component } from './comp/comp3/comp3.component';
     Comp1Component,
     Comp2Component,
     Comp3Component,
+    TakeComponent,
+    RetryComponent,
 
   ],
   imports: [

@@ -1,0 +1,29 @@
+<div class="my-5">
+  <h4>Retry Demo (it will retry 5 times to fetch data from server if data connection broke)</h4>
+  <br>
+  <button class="btn btn-primary" type="button" (click)="fetchdetail()">
+    <span *ngIf="fetching" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    {{fetching ? "fetching...":"Fetch data" }}
+  </button>
+  <br><br>
+  <strong>Status : <span [ngClass]="{
+    'text-success':status=='fetched data Sucessfully',
+    'text-danger':status=='Problem Encountered',
+    'text-warning':fetching==true
+  }">{{status}},
+</span> </strong>
+
+  <div class="card cards">
+    <div *ngFor="let item of person">
+
+      <ul class="techlist card p-2 my-3"  style="background-color: rgb(15, 155, 248);" >
+       <p style="color: white;" ><strong>ID : {{item.ID}}</strong></p>
+       <li>Roll.NO : {{item['Roll.no']}}</li>
+       <li>Name :{{item.Name}}</li>
+       <li>Stream : {{item.Stream}}</li>
+      </ul>
+   </div>
+
+
+  </div>
+</div>
