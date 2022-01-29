@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { CustomObserableComponent } from './modules/custom-obserable/custom-obserable.component';
+import { DebounceComponent } from './modules/debounce/debounce.component';
 import { FilterComponent } from './modules/filter/filter.component';
 import { IntervalComponent } from './modules/interval/interval.component';
 import { MapComponent } from './modules/map/map.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: "subject",component:SubjectComponent},
   {path: "take",component:TakeComponent},
   {path: "retry",component:RetryComponent},
+  {path: "debounce",component:DebounceComponent},
 
   {path: "**",redirectTo: "homepage"}
 ];

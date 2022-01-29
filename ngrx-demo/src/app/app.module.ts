@@ -24,6 +24,7 @@ import { Comp2Component } from './comp/comp2/comp2.component';
 import { Comp3Component } from './comp/comp3/comp3.component';
 import { TakeComponent } from './modules/take/take.component';
 import { RetryComponent } from './modules/retry/retry.component';
+import { DebounceComponent } from './modules/debounce/debounce.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,8 @@ import { RetryComponent } from './modules/retry/retry.component';
     Comp3Component,
     TakeComponent,
     RetryComponent,
+    DebounceComponent,
+
 
   ],
   imports: [

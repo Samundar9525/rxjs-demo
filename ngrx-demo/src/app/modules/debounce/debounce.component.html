@@ -1,0 +1,79 @@
+<div class="m-5">
+  <h3>Debounce and Distinct Until Change Example</h3>
+  <br><br>
+<div class="row">
+
+  <div class="col-md-4">
+    <strong>Ex :01  <span class="text-primary" >Example to show Api calls </span></strong>
+    <p>it will make call immediately and hence degrade performance</p>
+    <hr>
+    <div class="input-group mb-3">
+      <span class="input-group-text" >No debounce</span>
+      <input #myinput1  type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+    </div>
+    <h5>Search For  : <span class="text-success"><strong >{{debounceres1}}</strong></span></h5>
+
+      <ul id="elcontainer3331">
+
+        <p>Api call mades for element :</p>
+        <div *ngIf="status1" class="text-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </ul>
+
+  </div>
+
+
+  <div class="col-md-4">
+    <strong>Ex :01  <span class="text-primary" >Debouce Example</span></strong>
+    <p>it will not make call immediately and hence improve performance</p>
+    <hr>
+    <div class="input-group mb-3">
+      <span class="input-group-text" >Debouce for 1 sec </span>
+      <input #myinput2  type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+    </div>
+    <h5>Search for : <span class="text-success"><strong >{{debounceres2}}</strong></span></h5>
+
+      <ul id="elcontainer3332">
+        <p>Api call mades for element :</p>
+        <div *ngIf="status2" class="text-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </ul>
+
+  </div>
+
+  <div class="col-md-4">
+    <strong>Ex :02  <span class="text-primary" >Distinct Until Changed</span></strong>
+    <p> used to stop requesting same data from server</p>
+    <hr>
+    <div class="input-group mb-3">
+      <span class="input-group-text" >Search</span>
+      <input #myinput3  type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+
+    <h5>Search for :  <strong>{{changeuntil}}</strong></h5>
+
+    <ul id="elcontainer3333">
+      <p>Api call mades for element : (search same data again to see)</p>
+      <div *ngIf="status3" class="text-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </ul>
+
+  </div>
+
+
+
+
+</div>
+
+</div>
