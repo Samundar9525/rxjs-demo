@@ -1,0 +1,147 @@
+<body>
+  <div class="mt-5">
+    <div class="">
+      <div class="row justify-content-center">
+        <div class="col-md-9 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="form-block">
+                <div class="mb-4" style="text-align: center">
+                  <h3>
+                    <strong>Registration Form</strong>
+                  </h3>
+                </div>
+
+                <p class="py-3"><strong >Personal Detail</strong></p>
+                <form #login>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="email">First Name</label>
+                        <input type="text" class="form-control" name="username" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="email">Aadhar No</label>
+                        <input type="text" class="form-control" name="username" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="email">Last Name</label>
+                        <input type="text" class="form-control" name="username" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="email">Contact no</label>
+                        <input type="text" class="form-control" name="username" />
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="mb-3  ">
+                        <label for="email">DOB</label>
+                        <div class="form-group " >
+                          <div class="input-group">
+                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="mb-3">
+
+                            <label for="gender">Gender</label>
+                            <select id="gender" class="form-control">
+                              <option selected></option>
+                              <option>Male</option>
+                              <option>Female</option>
+                              <option>Other</option>
+                            </select>
+
+
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" name="username" />
+                      </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-6">
+                      <label for="inputCity">Address</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class=" col-md-4">
+                      <label for="inputState">State</label>
+                      <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Jharkhand</option>
+                        <option>Bihar</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                  </div>
+
+                  <p class=" mt-5"><strong >Educatinal Qualification</strong></p>
+                  <div class="row">
+                      <p>Xth class</p>
+                      <div class="col-md-4">
+                        <input type="text" class="form-control" name="10board" placeholder="Name of Board">
+                      </div>
+                      <div class="col-md-4">
+                        <input type="text" class="form-control" name="10percentage" placeholder="percentage">
+                      </div>
+                      <div class="col-md-4">
+                        <input type="text" class="form-control" name="10passingyear" placeholder="year of passing">
+                    </div>
+                  </div>
+
+
+                  <div class="row mt-4">
+                    <p>XIIth class</p>
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" name="12board" placeholder="Name of Board">
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" name="12percentage" placeholder="percentage">
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" name="12passingyear" placeholder="year of passing">
+                  </div>
+                </div>
+
+
+                <div class="row mt-4">
+                  <p>Graduation</p>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" name="College" placeholder="Name of College/University">
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" name="gradpercentage" placeholder="percentage">
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" name="gradpassingyear" placeholder="year of passing">
+                </div>
+              </div>
+
+
+
+
+
+                  <div class="mt-4 text-center">
+                    <button class="btn btn-primary">Register</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

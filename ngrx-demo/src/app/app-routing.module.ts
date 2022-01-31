@@ -7,17 +7,21 @@ import { CustomObserableComponent } from './modules/custom-obserable/custom-obse
 import { DebounceComponent } from './modules/debounce/debounce.component';
 import { FilterComponent } from './modules/filter/filter.component';
 import { IntervalComponent } from './modules/interval/interval.component';
+import { Login2Component } from './modules/login2/login2.component';
 import { MapComponent } from './modules/map/map.component';
 import { MergeComponent } from './modules/merge/merge.component';
 import { OfFromComponent } from './modules/of-from/of-from.component';
 import { PluckComponent } from './modules/pluck/pluck.component';
+import { RegisterationComponent } from './modules/registeration/registeration.component';
 import { ReplayComponent } from './modules/replay/replay.component';
 import { RetryComponent } from './modules/retry/retry.component';
+import { SignupComponent } from './modules/signup/signup.component';
 import { SubjectComponent } from './modules/subject/subject.component';
 import { TakeComponent } from './modules/take/take.component';
 import { TapComponent } from './modules/tap/tap.component';
 import { ToarrayComponent } from './modules/toarray/toarray.component';
 import { NgrxFormtoComponent } from './ngrx-formto/ngrx-formto.component';
+import { StudentdashboardComponent } from './studentdashboard/studentdashboard.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
 
 const routes: Routes = [
@@ -40,6 +44,11 @@ const routes: Routes = [
   {path: "replay",component:ReplayComponent},
   {path: "merge",component:MergeComponent},
   {path: "concat",component:ConcatComponent},
+  {path: "dashboard",component:StudentdashboardComponent},
+  {path: "loginform",component:Login2Component},
+  {path: "signupform",component:SignupComponent},
+  {path: "registrationform",component:RegisterationComponent},
+
 
 
   {path: "**",redirectTo: "homepage"} //this is wildcard it will redirect you to always homepage

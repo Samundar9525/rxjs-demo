@@ -1,0 +1,130 @@
+[
+{
+		"ID": "1",
+		"Roll.no": "2019272033",
+		"Name": "Samundar",
+		"Stream": "MCA",
+		"marks": {
+			"10th": 74,
+			"12th": 70,
+			"graduation": 7.7,
+			"post-graduation": 9.1
+		}
+	},
+	
+	
+	{
+		"ID": "2",
+		"Roll.no": "2019272024",
+		"Name": "Sabbir ",
+		"Stream": "MCA",
+		"marks": {
+			"10th": 65,
+			"12th": 59,
+			"graduation": 6.6,
+			"post-graduation": 7.1
+		}
+	},
+	
+	{
+		"ID": "3",
+		"Roll.no": "2019272056",
+		"Name": "Ghanshyam ",
+		"Stream": "MCA",
+		"marks": {
+			"10th": 75,
+			"12th": 69,
+			"graduation": 7.6,
+			"post-graduation": 8.1
+		}
+	},
+	{
+		"ID": "4",
+		"Roll.no": "2019272024",
+		"Name": "Rishav ",
+		"Stream": "MCA",
+		"marks": {
+			"10th": 45,
+			"12th": 69,
+			"graduation": 6.6,
+			"post-graduation": 9.1
+		}
+	},
+	{
+		"ID": "5",
+		"Roll.no": "2019272022",
+		"Name": "Shubham ",
+		"Stream": "MCA",
+		"marks": {
+			"10th": 70,
+			"12th": 89,
+			"graduation": 7.6,
+			"post-graduation": 7.1
+		}
+	},
+	{
+		"ID": "6",
+		"Roll.no": "2019272045",
+		"Name": "Anjan ",
+		"Stream": "MCA",
+		"marks": {
+			"10th": 85,
+			"12th": 86,
+			"graduation": 8.6,
+			"post-graduation": 9.1
+		}
+	},
+	{
+		"ID": "7",
+		"Roll.no": "2019272019",
+		"Name": "Vishal ",
+		"Stream": "MCA",
+		"marks": {
+			"10th": 75,
+			"12th": 69,
+			"graduation": 7.6,
+			"post-graduation": 9.1
+		}
+	},
+	
+		{
+		"ID": "8",
+		"Roll.no": "2019272028",
+		"Name": "Abhijeet ",
+		"Stream": "MCA",
+		"marks": {
+			"10th": 45,
+			"12th": 69,
+			"graduation": 7.6,
+			"post-graduation": 8.1
+		}
+	},
+			{
+		"ID": "9",
+		"Roll.no": "2019272011",
+		"Name": "Jay prakash ",
+		"Stream": "MCA",
+		"marks": {
+			"10th": 55,
+			"12th": 59,
+			"graduation": 7.6,
+			"post-graduation": 8.1
+		}
+	},
+	
+			{
+		"ID": "10",
+		"Roll.no": "2019272028",
+		"Name": "Abhijeet ",
+		"Stream": "MCA",
+		"marks": {
+			"10th": 45,
+			"12th": 69,
+			"graduation": 7.6,
+			"post-graduation": 8.1
+		}
+	},
+	
+	
+	
+]

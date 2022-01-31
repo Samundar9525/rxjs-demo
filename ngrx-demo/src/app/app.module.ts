@@ -28,6 +28,15 @@ import { DebounceComponent } from './modules/debounce/debounce.component';
 import { ReplayComponent } from './modules/replay/replay.component';
 import { ConcatComponent } from './modules/concat/concat.component';
 import { MergeComponent } from './modules/merge/merge.component';
+import { SplashscreenComponent } from './utility/splashscreen/splashscreen.component';
+import { FooterComponent } from './utility/footer/footer.component';
+import { CarouselComponent } from './utility/carousel/carousel.component';
+import { StudentdashboardComponent } from './studentdashboard/studentdashboard.component';
+import { Login2Component } from './modules/login2/login2.component';
+import { SignupComponent } from './modules/signup/signup.component';
+import { RegisterationComponent } from './modules/registeration/registeration.component';
+import { StudentrecordsComponent } from './modules/studentrecords/studentrecords.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -55,14 +64,26 @@ import { MergeComponent } from './modules/merge/merge.component';
     ReplayComponent,
     ConcatComponent,
     MergeComponent,
-
+    AppComponent,
+    SplashscreenComponent,
+    HeaderComponent,
+    FooterComponent,
+    CarouselComponent,
+    StudentdashboardComponent,
+    AppComponent,
+    LoginComponent,
+    SignupComponent,
+    RegisterationComponent,
+    StudentrecordsComponent,
+    Login2Component
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

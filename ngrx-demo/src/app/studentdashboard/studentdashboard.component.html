@@ -1,0 +1,126 @@
+<div class="container-xl px -5 py-5">
+  <div class="row">
+    <div class="col-sm-3" (click)="gradefour()">
+      <div class="card bg-danger p-2 text-light bg-opacity-70">
+        <div class="card-body" style="text-align: center">
+          <h5 class="card-title">
+            <span style="font-size: xx-large; font-weight: bold">
+              Grade 4
+            </span>
+          </h5>
+          <p class="card-text">Throughout Score less than 60%.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3" (click)="gradethree()">
+      <div class="card bg-primary p-2 text-light bg-opacity-20">
+        <div class="card-body" style="text-align: center">
+          <h5 class="card-title">
+            <span style="font-size: xx-large; font-weight: bold">Grade 3</span>
+          </h5>
+          <p class="card-text">Throughout Score lies between 60% to 70%</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3"  (click)="gradetwo()">
+      <div class="card p-2 text-light" style="background-color: blueviolet">
+        <div class="card-body" style="text-align: center">
+          <h5 class="card-title">
+            <span style="font-size: xx-large; font-weight: bold">Grade 2</span>
+          </h5>
+          <p class="card-text">Throughout Score lies between 70% to 80%</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3"  (click)="gradeone()">
+      <div class="card bg-success p-2 text-light bg-opacity-20">
+        <div class="card-body" style="text-align: center">
+          <h5 class="card-title">
+            <span style="font-size: xx-large; font-weight: bold">Grade 1 </span>
+          </h5>
+          <p class="card-text">Throughout Score lies between 80% to 99%</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+<hr>
+<strong>List of Students</strong>
+<div class="row px-5 py-5">
+  <table class="table " >
+   <thead class="table-light">
+    <tr style="text-align: center;" >
+      <th>ID</th>
+      <th>Roll.No</th>
+      <th>Name</th>
+      <th>Stream</th>
+      <th>X-Board(%)</th>
+      <th>XII-Board(%)</th>
+      <th>Graduation(CGPA)</th>
+      <th>Post-Graduation(CGPA)</th>
+      </tr>
+   </thead>
+
+<tr style="text-align: center;" *ngFor="let item of studdata">
+  <td>{{item.ID}}</td>
+  <td>{{item["Roll.no"]}}</td>
+  <td>{{item.Name}}</td>
+  <td>{{item.Stream}}</td>
+  <td>{{item.marks["10th"]}}</td>
+  <td>{{item.marks["12th"]}}</td>
+  <td>{{item.marks["graduation"]}}</td>
+  <td>{{item.marks["post-graduation"]}}</td>
+</tr>
+<!-- <tr style="text-align: center;">
+  <td>01</td>
+  <td>2019272033</td>
+  <td>Samundar Singh</td>
+  <td>Mca</td>
+  <td>74</td>
+  <td>70</td>
+  <td>7.7</td>
+  <td>9.1</td>
+  <td></td>
+</tr>
+<tr style="text-align: center;">
+  <td>01</td>
+  <td>2019272033</td>
+  <td>Samundar Singh</td>
+  <td>Mca</td>
+  <td>74</td>
+  <td>70</td>
+  <td>7.7</td>
+  <td>9.1</td>
+  <td></td>
+</tr><tr style="text-align: center;">
+  <td>01</td>
+  <td>2019272033</td>
+  <td>Samundar Singh</td>
+  <td>Mca</td>
+  <td>74</td>
+  <td>70</td>
+  <td>7.7</td>
+  <td>9.1</td>
+  <td></td>
+</tr><tr style="text-align: center;">
+  <td>01</td>
+  <td>2019272033</td>
+  <td>Samundar Singh</td>
+  <td>Mca</td>
+  <td>74</td>
+  <td>70</td>
+  <td>7.7</td>
+  <td>9.1</td>
+  <td></td>
+</tr> -->
+  </table>
+
+
+</div>
+
+
+
+</div>
