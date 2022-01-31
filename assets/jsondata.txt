@@ -1,0 +1,24 @@
+[
+{
+	"ID": "1",
+	"Name": "Samundar",
+	"Stream":"MCA",
+	"marks":[
+	"10th":74,
+	"12th":70,
+	"graduation":7.7
+	"post-graduation":9.1
+	]
+},
+{
+	"ID": "2",
+	"Name": "Sabbir",
+	"Stream":"MCA",
+	"marks":[
+	"10th":60,
+	"12th":50,
+	"graduation":6.8
+	"post-graduation":7.1
+	]
+}
+]
