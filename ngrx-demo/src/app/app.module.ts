@@ -25,6 +25,9 @@ import { Comp3Component } from './comp/comp3/comp3.component';
 import { TakeComponent } from './modules/take/take.component';
 import { RetryComponent } from './modules/retry/retry.component';
 import { DebounceComponent } from './modules/debounce/debounce.component';
+import { ReplayComponent } from './modules/replay/replay.component';
+import { ConcatComponent } from './modules/concat/concat.component';
+import { MergeComponent } from './modules/merge/merge.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +52,9 @@ import { DebounceComponent } from './modules/debounce/debounce.component';
     TakeComponent,
     RetryComponent,
     DebounceComponent,
+    ReplayComponent,
+    ConcatComponent,
+    MergeComponent,
 
 
   ],

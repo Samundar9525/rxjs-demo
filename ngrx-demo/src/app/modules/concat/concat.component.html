@@ -1,0 +1,54 @@
+
+<div class="my-3">
+  <div class="row px-5 px-3">
+    <h3>Concat operator Example</h3>
+    <p>Whwn we have to collect data from diffrent stream and show it in single output field
+       then we use concat operator to handle such sitation.
+    <strong>It generally used when we are strict toward the sequence of data and this sequnce matters a lot . it simply subscribe data of
+      one observation and once it finish only then it start subscribing other observation data.</strong>
+    </p>
+    <hr>
+    <div class="col-md-4">
+      <strong>Ex -01 </strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Animals ==> </strong> ['tiger','Bear','Lion','deer','zebra','fox']
+      </p>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Ex -02 </strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Bird ==> </strong> ['pigeon','dove','cukoo','eagle','vulture','penguin']
+      </p>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Ex -03 </strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Food ==> </strong>['pizza','samosa','burger','idli','dosai','litti']
+      </p>
+    </div>
+  </div>
+
+  <div class=" p-5 row justify-content-center">
+    <p>Here we can see the data coming from diffrent Stream are in serial manner and when one stream data completed then only
+      another stream data is subscribed.
+    </p>
+    <div class="col-md-6">
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Concat data : </strong> Animal + bird + food
+      </p>
+      <div class="card" >
+        <ul id="elcontainer567">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>

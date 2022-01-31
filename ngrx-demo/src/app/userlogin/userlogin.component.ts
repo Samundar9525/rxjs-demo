@@ -14,6 +14,10 @@ export class UserloginComponent implements OnInit {
     this.comment.myapi().subscribe((data)=>{
       console.log(data);
       this.cmnt=data;
+      for (let i=0;i<data.length;i++){
+      this.comment.listappend("Id : "+data[i].id,'elcontainer3250')
+      this.comment.listappend("Name : " + data[i].name,'elcontainer3251')
+      }
     })
 
   }

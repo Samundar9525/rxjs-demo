@@ -1,0 +1,67 @@
+<div class="m-5">
+  <h2>Replay operator</h2>
+  <p style="border: 1px solid grey; padding: 2px;">this is replay operator which is used to gave user data from a specific time like if we want that a particular work need atleat 10 element
+    to perform any task then we program in such a way that the user have to get at leat 10 instance anf from that position the work started for that
+    if also show a property of unsubscribe when the user not in need of data then the transmission must be stoped to save data
+  </p>
+  <br>
+  <div class="row">
+    <div class="col">
+      <h3>Add data :</h3>
+    </div>
+<div class="col text-right">
+  <button class="btn btn-warning" (click)="myframe()">{{toggleflag?  'Automate transmission ':'Stop Transmission'}}</button>
+</div>
+  </div>
+
+  <div class="row justify-content-center" *ngIf="toggleflag">
+    <hr />
+    <div class="col-md-4">
+      <input type="text" class="form-control" #video placeholder="manual instance " />
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-success" (click)="onvideoadd(video.value)">Add</button>
+    </div>
+
+  </div>
+  <hr />
+
+  <div class="row">
+    <div class="col-md-4">
+      <strong>User 01 (transmission of instance from server)</strong>
+      <hr />
+      <ul class="video-list">
+        <li *ngFor="let item of userlist1"><strong>data : </strong>{{item}}</li>
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <strong>User 02 (Retrive the most recent 5 instance)</strong>
+      <hr />
+      <ul class="video-list">
+        <li *ngFor="let item of userlist2"><strong>data : </strong>{{item}}</li>
+      </ul>
+      <button class="btn btn-success"
+      [ngClass]="subflag1? 'btn-danger':'btn-success' "
+      (click)="user2sub()">{{subflag1? 'Unsubscibe':'Subscribe'}}</button>
+    </div>
+
+    <div class="col-md-4">
+      <strong>User 03 (Retrive the most recent 5 instance)</strong>
+      <hr />
+      <ul class="video-list">
+        <li *ngFor="let item of userlist3"><strong>data : </strong>{{item}}</li>
+      </ul>
+      <button class="btn btn-success"
+      [ngClass]="subflag2? 'btn-danger':'btn-success' "
+      (click)="user3sub()">{{subflag2? 'Unsubscibe':'Subscribe'}}</button>
+    </div>
+
+  </div>
+
+
+
+
+
+
+</div>
