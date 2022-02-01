@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { ConcatComponent } from './modules/concat/concat.component';
+import { ConcatmapComponent } from './modules/concatmap/concatmap.component';
 import { CustomObserableComponent } from './modules/custom-obserable/custom-obserable.component';
 import { DebounceComponent } from './modules/debounce/debounce.component';
 import { FilterComponent } from './modules/filter/filter.component';
@@ -10,6 +11,7 @@ import { IntervalComponent } from './modules/interval/interval.component';
 import { Login2Component } from './modules/login2/login2.component';
 import { MapComponent } from './modules/map/map.component';
 import { MergeComponent } from './modules/merge/merge.component';
+import { MergemapComponent } from './modules/mergemap/mergemap.component';
 import { OfFromComponent } from './modules/of-from/of-from.component';
 import { PluckComponent } from './modules/pluck/pluck.component';
 import { RegisterationComponent } from './modules/registeration/registeration.component';
@@ -25,7 +27,7 @@ import { StudentdashboardComponent } from './studentdashboard/studentdashboard.c
 import { UserloginComponent } from './userlogin/userlogin.component';
 
 const routes: Routes = [
-  { path: "users", component: UserloginComponent },
+  {path: "users", component: UserloginComponent },
   {path: "homepage",component: HomepageComponent},
   {path: "login",component: LoginComponent},
   {path: "fromto",component: NgrxFormtoComponent},
@@ -48,8 +50,8 @@ const routes: Routes = [
   {path: "loginform",component:Login2Component},
   {path: "signupform",component:SignupComponent},
   {path: "registrationform",component:RegisterationComponent},
-
-
+  {path: "mergemap",component:MergemapComponent},
+  {path: "concatmap",component:ConcatmapComponent},
 
   {path: "**",redirectTo: "homepage"} //this is wildcard it will redirect you to always homepage
 ];

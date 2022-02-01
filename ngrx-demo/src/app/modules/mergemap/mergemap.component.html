@@ -1,0 +1,79 @@
+<div class="my-3">
+  <div class="row px-5 px-3">
+    <h3>MergeMap operator Example</h3>
+    <span>
+      <div class="row" style="text-align: right">
+        <div class="col">
+          <button class="btn btn-warning mx-3" (click)="mapmethod()">Normal data</button>
+          <button class="btn btn-warning mx-3" (click)="mergeallmethod()" >Merge All</button>
+          <button class="btn btn-warning mx-3"  (click)="mergemapmethod()">Merge Map</button>
+        </div>
+      </div>
+    </span>
+    <br><br><br>
+    <div class="col-md-4">
+      <strong>Ex -01 </strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Map (Without merge)</strong>
+      </p>
+      <ul id="elcontainer009"></ul>
+      <h5 *ngIf="flag1" style="border: 1px solid black; padding: 1rem;">
+        mapmethod()&#10100; <br>
+          this.source.pipe(
+            map(re=>this.getdata(re)),
+            ).subscribe(res=>&#10100;<br>
+            ................. <br>
+            ................ <br>
+            ................ <br>
+          &#10101;)
+        &#10101;
+      </h5>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Ex - 02</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Merge All </strong>
+      </p>
+      <ul id="elcontainer010"></ul>
+      <h5 *ngIf="flag2" style="border: 1px solid black; padding: 1rem;">
+        mapmethod()&#10100; <br>
+          this.source.pipe(
+            map(re=>this.getdata(re)),<br>
+            <strong>mergeAll()</strong><br>
+            ).subscribe(res=>&#10100;<br>
+            ................. <br>
+            ................ <br>
+          &#10101;)
+        &#10101;
+      </h5>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Ex -03 </strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Merge Map :</strong>
+      </p>
+      <ul id="elcontainer011"></ul>
+
+      <h5 *ngIf="flag3" style="border: 1px solid black; padding: 1rem;">
+        mapmethod()&#10100; <br>
+          this.source.pipe(
+            <br>
+            <strong> mergeMap(re=>this.getdata(re))</strong><br>
+            ).subscribe(res=>&#10100;<br>
+            ................. <br>
+            ................ <br>
+            ................ <br>
+          &#10101;)
+        &#10101;
+      </h5>
+    </div>
+
+  </div>
+
+
+</div>

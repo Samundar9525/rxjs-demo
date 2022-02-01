@@ -38,6 +38,8 @@ import { RegisterationComponent } from './modules/registeration/registeration.co
 import { StudentrecordsComponent } from './modules/studentrecords/studentrecords.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {LayoutModule} from '@angular/cdk/layout';
+import { MergemapComponent } from './modules/mergemap/mergemap.component';
+import { ConcatmapComponent } from './modules/concatmap/concatmap.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +79,8 @@ import {LayoutModule} from '@angular/cdk/layout';
     RegisterationComponent,
     StudentrecordsComponent,
     Login2Component,
+    MergemapComponent,
+    ConcatmapComponent,
 
   ],
   imports: [
