@@ -37,6 +37,7 @@ import { SignupComponent } from './modules/signup/signup.component';
 import { RegisterationComponent } from './modules/registeration/registeration.component';
 import { StudentrecordsComponent } from './modules/studentrecords/studentrecords.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {LayoutModule} from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SignupComponent,
     RegisterationComponent,
     StudentrecordsComponent,
-    Login2Component
+    Login2Component,
 
   ],
   imports: [
@@ -83,7 +84,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     HttpClientModule,
     CommonModule,
-    NgbModule
+    NgbModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
